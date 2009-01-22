@@ -8,7 +8,7 @@ TrueType format. They consist of three collections: "decorative", "straight",\
 Summary:       A Collection of High Quality TrueType Fonts
 Name:          %{fontname}-fonts
 Version:       0
-Release:       0.3.20011216%{?dist}
+Release:       0.4.20011216%{?dist}
 License:       Larabie Fonts License
 Group:         User Interface/X
 URL:           http://www.larabiefonts.com/
@@ -44,7 +44,6 @@ Summary:       Larabie TrueType Decorative Fonts
 Group:         User Interface/X
 Requires:      %{name}-common = %{version}-%{release}
 Obsoletes:     %{fontname}-fonts-deco < 0-0.3.20011216
-Provides:      %{fontname}-fonts-deco = 0-0.3.20011216
 
 %description -n %{fontname}-decorative-fonts
 %common_desc
@@ -57,7 +56,6 @@ Summary:       Larabie TrueType Straight Fonts
 Group:         User Interface/X
 Requires:      %{name}-common = %{version}-%{release}
 Obsoletes:     %{fontname}-fonts-straight < 0-0.3.20011216
-Provides:      %{fontname}-fonts-straight = 0-0.3.20011216
 
 %description -n %{fontname}-straight-fonts
 %common_desc
@@ -70,7 +68,6 @@ Summary:       Larabie TrueType Uncommon Fonts
 Group:         User Interface/X
 Requires:      %{name}-common = %{version}-%{release}
 Obsoletes:     %{fontname}-fonts-uncommon < 0-0.3.20011216
-Provides:      %{fontname}-fonts-uncommon = 0-0.3.20011216
 
 %description -n %{fontname}-uncommon-fonts
 %common_desc
@@ -157,6 +154,9 @@ rm -rf %{buildroot}
 %dir %{_fontdir}/uncommon
 
 %changelog
+* Thu Jan 22 2009 Orcan Ogetbil <oget [DOT] fedora [AT] gmail [DOT] com> - 0-0.4.20011216
+- Remove Provides' to match the guidelines
+
 * Wed Jan 21 2009 Orcan Ogetbil <oget [DOT] fedora [AT] gmail [DOT] com> - 0-0.3.20011216
 - Update package to meet new font packaging and naming guidelines
 
