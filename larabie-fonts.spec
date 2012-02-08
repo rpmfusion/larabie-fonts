@@ -8,7 +8,7 @@ TrueType format. They consist of three collections: "decorative", "straight",\
 Summary:       A Collection of High Quality TrueType Fonts
 Name:          %{fontname}-fonts
 Version:       0
-Release:       0.5.20011216%{?dist}
+Release:       0.6.20011216%{?dist}
 License:       Larabie Fonts License
 Group:         User Interface/X
 URL:           http://www.larabiefonts.com/
@@ -154,6 +154,9 @@ rm -rf %{buildroot}
 %dir %{_fontdir}/uncommon
 
 %changelog
+* Thu Feb 09 2012 Nicolas Chauvet <kwizart@gmail.com> - 0-0.6.20011216
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
 * Sun Mar 29 2009 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 0-0.5.20011216
 - rebuild for new F11 features
 
