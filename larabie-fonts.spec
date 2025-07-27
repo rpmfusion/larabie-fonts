@@ -8,7 +8,7 @@ TrueType format. They consist of three collections: "decorative", "straight",\
 Summary:       A Collection of High Quality TrueType Fonts
 Name:          %{fontname}-fonts
 Version:       0
-Release:       0.25.20011216%{?dist}
+Release:       0.26.20011216%{?dist}
 License:       Larabie Fonts License
 Group:         User Interface/X
 URL:           http://www.larabiefonts.com/
@@ -154,6 +154,9 @@ rm -rf %{buildroot}
 %dir %{_fontdir}/uncommon
 
 %changelog
+* Sun Jul 27 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0-0.26.20011216
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_43_Mass_Rebuild
+
 * Wed Jan 29 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0-0.25.20011216
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
 
